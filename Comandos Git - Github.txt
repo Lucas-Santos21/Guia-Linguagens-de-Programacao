@@ -1,0 +1,84 @@
+CONSIDERAÇÕES IMPORTANTES
+
+commit = é o ato de tirar um "print" de todo o seu projeto e guardar uma versão do mesmo.
+
+repositório remoto = é onde os arquivos e pastas da aplicação ficam salvos na nuvem de plataformas como Github.
+
+Branches = são diferentes "ambientes de desenvolvimento", os branchs funcionam como um sistema de "pastas" no projeto
+
+	  - branch master ou branch de produção é a aplicação q o clienteestá utilizando 
+	  - branch development é o ambiente de desenvolvimento, onde os devs testam a implementação de uma nova funcionalidade
+	  - branchs "das funcionalidades", são branchs separadas criadas para criar e desenvolver novas funcionalidades
+	    antes de colocá-las no ambiente de testagem (development) e posteriormente no ambiente de produção.
+
+	  - para enviar o conteúdo de uma brench para outro, precisa estar na branch q vai receber o conteúdo
+
+Repositório Clonado = Se outra pessoa clonou o repositório no Github e atualizou o mesmo, utilizar git pull para
+		      atualizar todos os branchs para ficar igual o repositorio remoto presente no Github, ou
+		      git pull (nome do repositório remoto)(nome da branch) pra atualizar somente a branch 
+		      desejada, como por exemplo: "git pull origin main" -> origin = nome do rep remoto e 
+		      main = nome da branch escolhida
+
+LISTA DE COMANDOS
+
+git init = inicializa o repositório Git (necessário)
+
+git add (nome do arquivo) = prepara um arquivo pare ser commitados
+git add. = prepara todos os arquivos para serem commitados
+
+
+git commit -m "mensagem" = faz o commit dos arquivos preparados, a "mensagem" é um comentario para
+			   a versão, como "cor de fundo alterado para azul"
+
+git log = mostra todos os commits realizados
+
+git config --global user.name "nome" = configura no git o nome de quem está usando, coloque
+				       o nome em "nome", como "lucas"
+
+
+git config --global user.email "email" = configura no git o email de quem está usando, coloque
+					 o email em "email"
+
+clear = Limpa o terminal git
+
+git status = mostra os arquivos que não estão preparados para commit mas tem modificações
+
+git rm --cached (nome do arquivo) = retira o arquivo do status "pronto para ser commitado"
+
+git branch development = cria a branch development ou branch de desenvolvimento
+
+git branch (nome da branch) = cria uma brach para a funcionalidade/mudança que deseja implementar na aplicação
+
+git branch = mostra todas as branchs
+
+git branch -d (nome da branch) = apaga a branch indicada
+
+git checkout development = troca para a branch development (desenvolvimento)
+			   
+git checkout master = troca para a branch master (produção)
+
+git checkout (nome da branch) = troca para a branch indicada
+
+git merge (nome da branch que terá seus arquivos recebidos) = faz os arquivos de outra branch irem para
+							      a branch que o Dev está
+
+git remote add origin https://github.com/Lucas-Santos21/curso-git-e-github.git = adiciona um repositório remoto 
+										com o nome origin
+
+git branch -M main = troca o nome do branch de produção de master para main (mudança recomendada pelo Github)
+
+git push -u origin main = puxa tudo presente no repositório local main para o
+			  repositório remoto origin
+
+git push origin (nome da branch) = puxa o conteúdo presente na branch para o repositório remoto
+
+git clone (link do repositorio remoto) = clona um repositorio remoto para a pasta que desejar.
+					 - Só é possivel utilizar git clone em repositorios públicos ou
+					   privados que voce tenha acesso.
+					 - utilizar commit e git push adiciona as mudanças no Github 
+
+git pull = atualiza todos os branchs locais para ficarem iguais ao branchs existentes no Github
+
+git pull (nome do repositório remoto)(nome da branch) = atualiza somente a branch desejada, como por exemplo:
+						        "git pull origin main" -> origin = nome do rep remoto
+				   		         main = nome da branch escolhida

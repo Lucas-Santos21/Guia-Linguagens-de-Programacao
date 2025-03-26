@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>teste</title>
+    
+</head>
+
+<body>  
+    <script src="script.js"></script>
+
+    <!-- Cabeçalhos -->
+
+    <h1>Cabeçalho 1</h1>
+    <h2>Cabeçalho 2</h2>
+    <h3>Cabeçalho 3</h3>
+    <h4>Cabeçalho 4</h4>
+    <h5>Cabeçalho 5</h5>
+    <h6>Cabeçalho 6</h6>
+
+    <!-- Paragrafos -->
+
+    <p>Lorem <strong>ipsum</strong> <em>dolor</em> sit amet.</p>
+
+    <!-- links -->
+
+    <hr>
+
+    <a href="https://google.com" target="_blank">Link para o Google abrir em outra aba</a><br><br>
+
+    <!-- Classe e id -->
+
+    <p class="p_classe">Esse paragrafo possui um classe</p>
+    <p id="p_id">Esse paragrafo possui um id</p>
+
+    <hr><br>
+
+    <!-- tabelas -->
+
+    <table id="tabela_teste">
+
+        <thead>
+            <tr>
+                <th>Nome</td>
+                <th>Idade</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>20</td>
+            </tr>
+        
+            <tr>
+                <td>Pedro</td>
+                <td>70</td>
+            </tr>
+        
+            <tr>
+                <td>Joares</td>
+                <td>55</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="2">Nomes</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+    <br><hr>
+
+    <!-- Formulários -->,
+
+    <!-- Alguns tipos de input não intuitivos possuem sua
+         descrição abaixo -->
+
+    <form action="recebe.php" method="post">
+
+        <div>
+
+            <label for="Nome">Input tipo texto</label>
+            <input type="text" name="Nome" placeholder="Nome">
+
+        </div><br>
+        <div>
+
+            <label for="Nome">Imput tipo button</label>
+            <input type="button" value="Clique Aqui">
+        
+        </div><br>
+        <div>
+        
+            <label>Imput tipo checkbox</label>
+
+            <input type="checkbox"  name="checkbox1" value="opção 1">
+            <label for="checkbox1">Opção 1</label>
+            <input type="checkbox"  name="checkbox2" value="opção 2">
+            <label for="checkbox2">Opção 2</label>
+            <input type="checkbox"  name="checkbox3" value="opção 3">
+            <label for="checkbox3">Opção 3</label>
+            
+            
+        
+        </div><br>
+        <div>
+        
+            <label for="escholeCor">Imput tipo color</label>
+            <input type="color" name="escholeCor">
+        
+        </div><br>   
+        <div>
+        
+            <label for="data">Imput tipo date</label>
+            <input type="date" name="data">
+        
+        </div><br>      
+        <div>
+        
+            <label for="dataHora">Imput tipo data e hora</label>
+            <input type="datetime-local" name="dataHora">
+        
+        </div><br>    
+        <div>
+        
+            <label for="Email">Imput tipo Email</label>
+            <input type="email" name="Email">
+        
+        </div><br>
+        <div>
+        
+            <label for="Arquivo">Imput tipo Arquivo</label>
+            <input type="file" name="Arquivo">
+        
+        </div><br>    
+        <div>
+        
+            <label for="secreto">Imput tipo hidden</label>
+            <input type="hidden" name="secreto">
+
+            <!-- Esse input n é visivel ao usuario, funciona 
+                 para passar valores que não precisão ser 
+                 mostrados, como o id do usuário -->
+        
+        </div><br>    
+        <div>
+        
+            <label for="Image">Imput tipo Image</label>
+            <input type="image" name="image" src="">
+
+            <!-- Funciona para usar uma imagem como  button
+                 no formulário (colocar a imagem no "src")-->
+        
+        </div><br>    
+        <div>
+
+            <!-- Funciona para marcar mes e ano -->
+        
+            <label for="Mes">Imput tipo month</label>
+            <input type="month" name="Mes">
+        
+        </div><br>    
+        <div>
+
+            <!-- Aumenta a contagem do número com
+                 o click do mouse -->
+        
+            <label for="Numero">Imput tipo number</label>
+            <input type="number" name="Numero">
+        
+        </div><br>    
+        <div>
+        
+            <label for="Senha">Imput tipo password</label>
+            <input type="password" name="Senha">
+        
+        </div><br>    
+        <div>
+        
+            <!-- Todos os inputs tipo radio devem possuir
+                 o mesmo name, caso deseje que somente 1
+                 seja marcado por vez -->
+
+            <label>Imput tipo radio</label><br>
+            <input type="radio" name="opção" value="OpçãoR1">
+            <label for="OpçãoR1">Opção 1/label>
+            <input type="radio" name="opção" value="OpçãoR2">
+            <label for="OpçãoR2">Opção 2</label>
+        
+        </div><br>    
+        <div>
+        
+            <label for="escala">Imput tipo range</label>
+            <input type="range" name="escala">
+        
+        </div><br>    
+        <div>
+
+            <!-- Reseta tudo marcado no formulário -->
+        
+            <label for="resetar">Imput tipo reset</label>
+            <input type="reset" name="resetar">
+        
+        </div><br>    
+        <div>
+        
+            <!-- Utilizadp junto a um scrpit JavaScrpit pode
+                 ser utilziado para buscar algo no site
+                 É semelhante ao tipo "text" em aparência -->
+
+            <label for="encontrar">Imput tipo search</label>
+            <input type="search" name="encontrar">
+        
+        </div><br>    
+        <div>
+
+            <!-- Funciona com o <button> também, serve para enviar
+                 todas as informações presentes no formulário -->
+        
+            <label for="submeter">Imput tipo submit</label>
+            <input type="submit" name="submeter">
+        
+        </div><br>    
+        <div>
+        
+            <!-- Funciona para enviar números de telefone, no 
+                 celular ele abre direto o teclado númerico,
+                 este input sozinho não valida o formato do número -->
+
+            <label for="telefone">Imput tipo tel</label>
+            <input type="tel" name="telefone">
+        
+        </div><br>    
+        <div>
+        
+            <!-- Guarda o horário -->
+
+            <label for="horario">Imput tipo time</label>
+            <input type="time" name="horario">
+        
+        </div><br>   
+        <div>
+
+            <!-- Input para enviar links, ele n permite enviar
+                 urls no formato errado -->
+        
+            <label for="Url">Imput tipo url</label>
+            <input type="url" name="Url">
+        
+        </div><br>    
+        <div>
+        
+            <!-- Input para enviar a semana do ano escolhida -->
+
+            <label for="Semana">Imput tipo week</label>
+            <input type="week" name="Semana">
+        
+        </div><br>    
+        <div>
+
+            <!-- É uma área de tamanho modificavel pelo usuário
+                 que pode ter seu tamanho modificado e digitar dentro -->
+
+        <textarea name="area de texto" id="texto">area de textos</textarea><br><br>
+
+        </div>
+
+        <div>
+
+            <!-- É um botão, serve para ser clicado e submeter informações. -->
+
+        <button>Clique aqui</button>
+
+        </div>
+
+    </form><br>
+
+    <hr><br>
+
+</body>
+
+</html>
